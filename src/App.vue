@@ -1,14 +1,17 @@
 <template>
-  <HelloWorld/>
+  <Home/>
+  <Content/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home.vue'
+import Content from './components/Content.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Content,
+    Home
   }
 }
 </script>
@@ -18,7 +21,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  margin-top: 60px;
+  background-color: #161B33;
 }
 </style>
