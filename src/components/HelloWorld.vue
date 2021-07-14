@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p>
-      slt en fait, ici va y avoir un portefolio mais pour le moment le fais juste les installations relou à mourir
+    <p class="animate-bounce text-xl text-gray-600">
+      slt, ici il va y avoir un portefolio mais pour le moment je fais juste les installations relou à en mourir
     </p>
   </div>
 </template>
