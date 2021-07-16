@@ -1,49 +1,43 @@
 <template>
-  <div>
-    <ul class="shadow-2xl">
-      <p class="p-4 shadow text-xl">Ludovic Spina</p>
-      <li><a class="active" href="#home">Accueil</a></li>
-      <li><a href="#about">A propos</a></li>
-      <li><a href="#">Résumé</a></li>
-      <li><a href="#">Portefolio</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+  <div class="wrapper">
+    <div class="home h-screen">
+      <Content/>
+    </div>
+    <div class="left h-screen"></div>
+    <div class="right h-screen"></div>
   </div>
 </template>
 
 <script>
+
+import Content from './Content.vue'
+
 export default {
-  name: "Home"
+  name: "Home",
+  components: {
+    Content
+  },
 }
 </script>
 
 <style scoped>
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 13%;
-  background-color: #2F3253;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  color: white;
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-li a {
-  display: block;
-  padding: 8px 16px;
-  text-decoration: none;
+.home {
+  grid-column: 1/3;
+  background-color: #121719;
 }
 
-li a.active {
-  background-color: #161B33;
-  color: white;
+.left {
+  grid-column: 1/1;
+  background-color: #13191C;
 }
 
-li a:hover:not(.active) {
-  background-color: #161B33;
-  color: white;
+.right {
+  grid-column: 2/2;
+  background-color: #161E22;
 }
 </style>
